@@ -1,0 +1,274 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family:serif ,Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+body {
+    color: rgb(73, 66, 66);
+    line-height: 1.6;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/* Top Banner (unchanged) */
+header > h1 {
+    color: rgb(79, 73, 73);
+    text-align: center;
+    padding: 20px;
+    background-color: yellow;
+    padding: 10px ; /* Adjust padding to match navbar height */
+    font-size: 1.8em; /* Scale font size proportionally */
+    height: 60px; /* Explicit height matching navbar */
+    padding-bottom: 10px;
+}
+
+/* Navigation Bar (unchanged) */
+nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(73, 66, 66);
+    list-style: none;
+    padding: 10px 0;
+    height: 50px;
+}
+
+nav ul li {
+    margin: 0 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+main div {
+
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+/* Section Below Navbar */
+main > header {
+    position: relative;
+    background-image: url('images/talking_heads-speaking_in_tongues.png');
+    background-size: cover;
+    background-position: center;
+    text-align: left;
+    color: white;
+    height: 300px;
+}
+main h1{
+    font-weight: bold;
+    color: yellow;
+    margin-bottom: 0%;
+}
+
+main > header h2, main > header h3 {
+    margin-bottom: 20px;
+}
+
+main > header h3 strong {
+    font-weight: bold;
+}
+
+#banner{
+    padding-left: 10%;
+    display: flex;
+    justify-content: space-between; /* Space between text and image */
+    align-items: center; /* Vertically center the content */
+    padding: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: rgba(0, 0, 0, 0.782);
+    height: 300px;
+}
+
+#album{
+    color: gray;
+}
+
+img {
+    height: 150px;
+    width: 10%;
+    order: 2;
+}
+.text-content {
+    flex: 1; 
+    text-align: left; 
+    padding-right: 20px; 
+}
+/* Layout for Main Content */
+
+.title{
+    background-color: yellow;
+    color: darkslategrey;
+    width: 20%;
+    height: 10%;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 1.1em;
+    
+}
+
+main .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* Lyrics Section */
+article {
+    flex: 3;
+}
+
+article section {
+    margin-bottom: 20px;
+    border-width: 3px;
+    margin-left: 8%;
+    border-left: 5px solid yellow;
+}
+
+article section.chorus {
+    margin-left: 15%; /* Increased indentation for choruses */
+}
+
+article section h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+article section p {
+
+    padding-left: 15px;
+}
+
+/* About Section */
+aside {
+    flex: 2;
+    color: white;
+    background-color: rgb(65, 59, 59);
+    padding-bottom: 20px;
+    /*margin-right: 20%;*/
+    padding-right: 0px;
+
+    
+}
+#info p {
+    margin-bottom: 25px;
+}
+
+aside h2 {
+    background-color: yellow;
+    color: rgb(73, 66, 66);
+    padding: 10px;
+    margin-bottom: 25px;
+    font-weight: lighter;
+}
+
+aside iframe {
+    display: block;
+    margin: 20px auto 0;
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+hr{
+    background-color: yellow;
+    margin-top: 3%;
+    margin-bottom: 1%;
+    margin-right: 2%;
+    margin-right: 2%;
+    height: 5px;
+}
+sup a{
+    color: yellow;
+}
+footer{
+    margin: 25px;
+}
+footer a{
+    background-color: yellow;
+}
+
+
+
+
+.formbody {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #333;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+#formtitle {
+    text-align: center;
+    color: #444;
+    margin-bottom: 20px;
+} 
+
+/* Form Styles */
+form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+textarea {
+    resize: none;
+}
+
+button.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Submitted Data Styles */
+#submittedData {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e9ecef;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.5;
+}
